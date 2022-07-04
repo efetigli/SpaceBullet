@@ -84,10 +84,10 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -175,9 +175,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: dc23ffffa622ffff5822ffff0e22ffff
-      m_LastClickedID: -56818
-      m_ExpandedIDs: 0a27ffffa027ffffe639fffff039ffff72ecffff84efffffb4f3ffff20fbffff60fbffff
+      m_SelectedIDs: d4f7feff
+      m_LastClickedID: -67628
+      m_ExpandedIDs: 52e9feffdef5feff62f7feffc6f7feffd4f7feff78f9fefff039ffff72ecffff84efffffb4f3ffff20fbffff60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 1724
     height: 875
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -501,9 +501,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1750.1968, y: 65.503296, z: -0.36733887}
+    m_Target: {x: 977.4459, y: 306.3522, z: -5.215349}
     speed: 2
-    m_Value: {x: 1748.4683, y: 66.16177, z: -0.29918694}
+    m_Value: {x: 977.4459, y: 306.3522, z: -5.215349}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -554,9 +554,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 158.26604
+    m_Target: 561.7751
     speed: 2
-    m_Value: 151.45076
+    m_Value: 561.7751
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -759,22 +759,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sprites/UISprites
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Sprites/UISprites
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\tigli\OneDrive\Belgeler\UnityProjects\SpaceBullet\SpaceBulletGameProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c650000
-    m_LastClickedID: 25884
-    m_ExpandedIDs: 000000001c65000000ca9a3b
+    m_SelectedIDs: e6930000
+    m_LastClickedID: 37862
+    m_ExpandedIDs: 000000001c6500007265000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -827,10 +827,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: dc23ffffa622ffff5822ffff0e22ffff
-    m_LastClickedInstanceID: -56356
+    m_SelectedInstanceIDs: d4f7feff
+    m_LastClickedInstanceID: -67628
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000088550000087100003284000090550000147d0000187d000050520000525200006a5600006a8b0000de52000052930000c4e90000946600001654000054740000f0610000ac530000aa5c0000ac540000169b000092e400005c830000625e0000fc600000647700008c550000566600004a660000a2680000426600002266000054be0000306100003461000084610000886100008c6100009061000094610000986100009c610000a06100009a6a000058be00005a3701005e63000000000000
+    m_ExpandedInstanceIDs: c623000088550000087100003284000090550000147d0000187d000050520000525200006a5600006a8b0000de52000052930000c4e90000946600001654000054740000f0610000ac530000aa5c0000ac540000169b000092e400005c830000625e0000fc600000647700008c550000566600004a660000a2680000426600002266000054be0000306100003461000084610000886100008c6100009061000094610000986100009c610000a06100009a6a000058be00005a3701005e630000000000005c91000064910000f6930000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -916,7 +916,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -50704
+  m_LastSelectedObjectID: -71342
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1026,8 +1026,8 @@ MonoBehaviour:
     y: 0
     width: 448
     height: 1299
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

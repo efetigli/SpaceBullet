@@ -14,11 +14,25 @@ public class BulletPhysics : MonoBehaviour
 
     void Update()
     {
+        BulletMove();
+    }
+
+    private void BulletMove()
+    {
         this.transform.position += transform.up * moveSpeed * Time.deltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isHit = true;
+        if(collision.gameObject.tag == "Enemy")
+        {
+            isHit = true;
+            Destroy(collision.gameObject.transform.parent.gameObject);
+        }
+
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            isHit = true;
+        }
     }
 }
