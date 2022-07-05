@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Obstacle
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1447887417
+    locked: 0
+  - name: Bullet
+    uniqueID: 4252552785
+    locked: 0
+  - name: EnemyShip
+    uniqueID: 2752999683
     locked: 0
   - name: PlayerShip
     uniqueID: 4074355947
