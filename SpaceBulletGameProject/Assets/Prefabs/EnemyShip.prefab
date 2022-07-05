@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6811318215483898939}
   - component: {fileID: 6811318215483898938}
+  - component: {fileID: 1616013148}
   m_Layer: 7
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -85,6 +86,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1616013148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811318215483898940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a719acfd2ad72f748972beae32e06374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 2808817009220827179}
+  playerShip: {fileID: 0}
+  isFireBullet: 0
+  enemyBullet: {fileID: 3324509707546092249, guid: 3103249290d77494c877632af70f7316, type: 3}
 --- !u!1 &6811318215691824432
 GameObject:
   m_ObjectHideFlags: 0

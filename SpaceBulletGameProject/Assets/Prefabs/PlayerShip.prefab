@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 4776317011375554134}
   m_Layer: 6
   m_Name: ShipSprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3102230470310072127}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ce0ed8aa69af9243984f41f7df42355, type: 3}
   m_Name: 
@@ -265,6 +265,8 @@ MonoBehaviour:
   range: 50
   rotateSpeed: 30
   stopRotation: 0
+  moveOriginalRotation: 0
+  isReachedOriginalRotation: 0
 --- !u!1 &3102230470791230085
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3102230470791230090}
   - component: {fileID: 3102230470791230091}
+  - component: {fileID: 1830722305}
   m_Layer: 6
   m_Name: PlayerShip
   m_TagString: Player
@@ -315,8 +318,30 @@ MonoBehaviour:
   gun: {fileID: 3102230469627951520}
   bullet: {fileID: 3324509707546092249, guid: 6e6521a19547b9542b44f223c41cbde8, type: 3}
   isFireBullet: 0
+  levelManager: {fileID: 0}
   bulletsInsideMagazine:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  isMagazineEmpty: 0
+--- !u!95 &1830722305
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102230470791230085}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13110956501fb864e88bb6ecc07107df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
