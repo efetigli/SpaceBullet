@@ -31,7 +31,6 @@ public class EnemyLateralMovement : MonoBehaviour
     {
         if (isMovingLeft)
         {
-            Debug.Log(distanceBetweenShipAndLimit + " " + distanceBetweenLimits);
             distanceBetweenShipAndLimit = Mathf.Abs(this.transform.position.x - rightLimit.transform.position.x);
             if (distanceBetweenShipAndLimit >= distanceBetweenLimits)
             {
@@ -44,7 +43,6 @@ public class EnemyLateralMovement : MonoBehaviour
         }
         else if (isMovingRight)
         {
-            Debug.Log(distanceBetweenShipAndLimit + " " + distanceBetweenLimits);
             distanceBetweenShipAndLimit = Mathf.Abs(this.transform.position.x - leftLimit.transform.position.x);
             if (distanceBetweenShipAndLimit >= distanceBetweenLimits)
             {
@@ -53,7 +51,6 @@ public class EnemyLateralMovement : MonoBehaviour
                 return;
             }
 
-            Debug.Log("asd");
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0, 0);
         }
     }
