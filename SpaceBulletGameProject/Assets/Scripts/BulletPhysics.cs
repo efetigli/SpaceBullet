@@ -6,10 +6,12 @@ public class BulletPhysics : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [HideInInspector] public bool isHit;
+    [HideInInspector] public bool isHitEnemyShip;
 
     private void Start()
     {
         isHit = false;
+        isHitEnemyShip = false;
     }
 
     void Update()
@@ -27,6 +29,7 @@ public class BulletPhysics : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             isHit = true;
+            isHitEnemyShip = true;
             Destroy(collision.gameObject.transform.parent.gameObject);
         }
 

@@ -13,10 +13,14 @@ public class FireMechanic : MonoBehaviour
     private GameObject bulletClone;
     [HideInInspector] public bool isFireBullet;
 
+    [Header("Needed Managers")]
+    [SerializeField] private GameObject levelManager;
+
     [Header("Magazine")]
     [SerializeField] private GameObject[] bulletsInsideMagazine;
     private int bulletNumber;
     [HideInInspector] public bool isMagazineEmpty;
+
 
     private void Start()
     {
@@ -55,6 +59,8 @@ public class FireMechanic : MonoBehaviour
 
         isFireBullet = true;
         sight.GetComponent<SightMoving>().stopRotation = true;
+
+        MagazineSimulation();
     }
 
     private void DestroyBullet()
@@ -66,14 +72,30 @@ public class FireMechanic : MonoBehaviour
         {
             isFireBullet = false;
             sight.GetComponent<SightMoving>().stopRotation = false;
+
             Magazine();
+
+            BulletHitEnemy();
+
             Destroy(bulletClone);
         }
     }
 
-    private void Magazine()
+    private void BulletHitEnemy()
+    {
+        if (!bulletClone.GetComponent<BulletPhysics>().isHitEnemyShip)
+            return;
+
+        levelManager.GetComponent<LevelManager>().DestroyedOneEnemyShip();
+    }
+
+    private void MagazineSimulation()
     {
         bulletsInsideMagazine[bulletNumber].SetActive(false);
+    }
+
+    private void Magazine()
+    {
         bulletNumber = bulletNumber + 1; // 1 bullet is used.
         if (bulletNumber == bulletsInsideMagazine.Length)
         {

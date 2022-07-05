@@ -14,6 +14,9 @@ public class SightMoving : MonoBehaviour
 
     [HideInInspector] public bool stopRotation;
 
+    [HideInInspector] public bool moveOriginalRotation;
+    [HideInInspector] public bool isReachedOriginalRotation;
+
     private void Start()
     {
         leftRotate = new Vector3(0, 0, 1);
@@ -55,5 +58,24 @@ public class SightMoving : MonoBehaviour
             this.transform.localEulerAngles.z >= (360 - range) );
         if (isFlip)
             isRotatingLeft = !isRotatingLeft;
+
+        ReachOriginalRotation();
+    }
+
+    private void ReachOriginalRotation()
+    {
+        if (!moveOriginalRotation)
+            return;
+
+        Debug.Log(this.transform.rotation.z);
+
+        Vector3 originalRotation = new Vector3(0, 0, 0);
+
+        if(Vector3.Distance(transform.eulerAngles, originalRotation) > 0.01f)
+        {
+            transform.eulerAngles = originalRotation;
+            stopRotation = true;
+            isReachedOriginalRotation = true;
+        }
     }
 }
