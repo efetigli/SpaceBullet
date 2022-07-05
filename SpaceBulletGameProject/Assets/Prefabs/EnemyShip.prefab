@@ -40,8 +40,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6811318215483898939}
-  - component: {fileID: 6811318215483898938}
   - component: {fileID: 1616013148}
+  - component: {fileID: 1195686603}
+  - component: {fileID: 5625520979839255278}
   m_Layer: 7
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -66,26 +67,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9180}
---- !u!95 &6811318215483898938
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6811318215483898940}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1616013148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +83,34 @@ MonoBehaviour:
   playerShip: {fileID: 0}
   isFireBullet: 0
   enemyBullet: {fileID: 3324509707546092249, guid: 3103249290d77494c877632af70f7316, type: 3}
+--- !u!114 &1195686603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811318215483898940}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485bd81f04a5b0d408301ff5c83d661b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLimit: {fileID: 0}
+  rightLimit: {fileID: 0}
+  speed: 3
+--- !u!114 &5625520979839255278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811318215483898940}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8706124d80f72af42a43fc0c37a8081f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.2
 --- !u!1 &6811318215691824432
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +123,7 @@ GameObject:
   - component: {fileID: 6811318215691824429}
   - component: {fileID: 6811318215691824430}
   - component: {fileID: 6811318215691824428}
+  - component: {fileID: 7172321573512614649}
   m_Layer: 7
   m_Name: ShipSprite
   m_TagString: Enemy
@@ -177,7 +187,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1257503119, guid: 46d84b30aabba1c47b8d715bc1f3f3d6, type: 3}
+  m_Sprite: {fileID: -669742727, guid: b3d9b63c50df8994f8f0c9cbfd00d6c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -225,3 +235,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 7
+--- !u!114 &7172321573512614649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811318215691824432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5fb1136cd452d4fa6899a8fb8ecf46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
