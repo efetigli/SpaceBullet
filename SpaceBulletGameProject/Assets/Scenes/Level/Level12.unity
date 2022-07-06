@@ -152,6 +152,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2035427686}
+  - {fileID: 1912766571}
+  - {fileID: 1881366369}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -178,6 +180,10 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1037436534}
     - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: playerShip
       value: 
@@ -281,6 +287,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1037436534}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 1575855017}
@@ -382,6 +392,10 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1037436534}
     - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: playerShip
       value: 
@@ -578,6 +592,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5992241565305239260, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
   m_PrefabInstance: {fileID: 975916874}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &975916879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1526365231, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+  m_PrefabInstance: {fileID: 975916874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1027980589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -639,6 +658,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4147459915220402864, guid: df08178b8c04e644d9b4b71f454532e7, type: 3}
   m_PrefabInstance: {fileID: 1027980589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1037436534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1263161754, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+  m_PrefabInstance: {fileID: 975916874}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1270188747
 GameObject:
@@ -882,6 +906,117 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1881366368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881366369}
+  - component: {fileID: 1881366370}
+  m_Layer: 0
+  m_Name: UnlockOrLockedLevels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1881366369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881366368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 425944093}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881366370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881366368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93745dff72daaa48b2d89dfa2af0e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1912766570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1912766571}
+  - component: {fileID: 1912766573}
+  - component: {fileID: 1912766572}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912766571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912766570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 425944093}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912766572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912766570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1912766573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912766570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2035427685
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,3 +1065,6 @@ MonoBehaviour:
   playerShipAnimator: {fileID: 1575855016}
   sight: {fileID: 1575855015}
   enemyShipCount: 3
+  complete: {fileID: 975916879}
+  completePanelTime: 1.5
+  unlockOrLockedLevels: {fileID: 1881366368}
