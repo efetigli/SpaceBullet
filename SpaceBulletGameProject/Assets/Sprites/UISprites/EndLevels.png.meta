@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a69972bb080d85d469764b666c60b569
+guid: 7793802fb43b5054d8f117c5ec7e36d9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameOver_0
+      name: EndLevels_0
       rect:
         serializedVersion: 2
         x: 97
@@ -112,14 +112,98 @@ TextureImporter:
         width: 48
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f682ec752e80743478cbafcd587edb13
-      internalID: 1512222663
+      spriteID: 8363cf1dd7b971342a8cf7e0016fcf94
+      internalID: 1368465399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EndLevels_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 51
+        width: 44
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1145f27db4c01474992aee178851ad67
+      internalID: -95358253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EndLevels_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 30
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a160aa7dd453304c8f6d2001a59f7b3
+      internalID: 2141094250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EndLevels_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 23
+        width: 51
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1d151b2a5cc4b46b6b7ea1c8eb03b2
+      internalID: 453075366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EndLevels_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 15
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fca6c39ebab1044a500bd31686301d
+      internalID: 612373579
       vertices: []
       indices: 
       edges: []
@@ -135,7 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GameOver_0: 1512222663
+      EndLevels_2: 2141094250
+      EndLevels_3: 453075366
+      EndLevels_1: -95358253
+      EndLevels_0: 1368465399
+      EndLevels_4: 612373579
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
