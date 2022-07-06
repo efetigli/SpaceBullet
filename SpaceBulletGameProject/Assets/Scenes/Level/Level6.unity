@@ -690,6 +690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyShip
       objectReference: {fileID: 0}
+    - target: {fileID: 6811318215691824429, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -669742727, guid: b3d9b63c50df8994f8f0c9cbfd00d6c0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
 --- !u!4 &1773923859 stripped
