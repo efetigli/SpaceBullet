@@ -15,6 +15,8 @@ public class EnemyFire : MonoBehaviour
 
     private bool flag;
 
+    [SerializeField] private GameObject gameOver;
+
     private void Start()
     {
         flag = true;
@@ -62,9 +64,18 @@ public class EnemyFire : MonoBehaviour
 
         if (enemyBulletClone.GetComponent<EnemyBulletPhysics>().isHit)
         {
+            if (enemyBulletClone.GetComponent<EnemyBulletPhysics>().isHitPlayer)
+                StartCoroutine(ActivateGameOver());
             isFireBullet = false;
             Destroy(enemyBulletClone);
         }
+    }
+
+    private IEnumerator ActivateGameOver()
+    {
+        yield return new WaitForSeconds(1f);
+        
+        gameOver.SetActive(true);
     }
 
     private void RotateTowardsTarget()
