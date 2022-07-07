@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7793802fb43b5054d8f117c5ec7e36d9
+guid: c5c8df3fac153c0419a823cb7d53cc0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,11 +104,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EndLevels_0
+      name: Pause_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 60
+        x: 34
+        y: 45
         width: 48
         height: 7
       alignment: 0
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8363cf1dd7b971342a8cf7e0016fcf94
-      internalID: 1368465399
+      spriteID: f8e37f0b95d171f439e7d5685a6873aa
+      internalID: -1483644824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EndLevels_1
+      name: Pause_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 51
-        width: 48
-        height: 7
+        x: 52
+        y: 33
+        width: 5
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1145f27db4c01474992aee178851ad67
-      internalID: -95358253
+      spriteID: f4762c25c1b6dce4abb19d823b9ed15d
+      internalID: 1470812966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EndLevels_2
+      name: Pause_2
       rect:
         serializedVersion: 2
-        x: 85
-        y: 30
-        width: 50
-        height: 5
+        x: 60
+        y: 33
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,50 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a160aa7dd453304c8f6d2001a59f7b3
-      internalID: 2141094250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EndLevels_3
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 23
-        width: 51
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea1d151b2a5cc4b46b6b7ea1c8eb03b2
-      internalID: 453075366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EndLevels_4
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 15
-        width: 50
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30fca6c39ebab1044a500bd31686301d
-      internalID: 612373579
+      spriteID: 51beca96d6354754ea3ab10762a8bba9
+      internalID: 811892444
       vertices: []
       indices: 
       edges: []
@@ -219,11 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      EndLevels_2: 2141094250
-      EndLevels_3: 453075366
-      EndLevels_1: -95358253
-      EndLevels_0: 1368465399
-      EndLevels_4: 612373579
+      Pause_2: -1483644824
+      Pause_1: 1179595636
+      Pause_0: 1015900903
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
