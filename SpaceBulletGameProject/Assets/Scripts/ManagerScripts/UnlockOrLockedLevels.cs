@@ -43,5 +43,6 @@ public class UnlockOrLockedLevels : MonoBehaviour
     public void DeleteLevelsData()
     {
         PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("MainMenu");
     }
 }
