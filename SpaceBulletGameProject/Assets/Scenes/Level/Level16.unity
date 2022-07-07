@@ -675,6 +675,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 287279076, guid: c1c5c054088e3da49b016811b679143b, type: 3}
+    - target: {fileID: 7172321573512614649, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 2083422223}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
 --- !u!4 &683597801 stripped
@@ -1043,6 +1047,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 287279076, guid: c1c5c054088e3da49b016811b679143b, type: 3}
+    - target: {fileID: 7172321573512614649, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 2083422223}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
 --- !u!4 &1797964679 stripped
@@ -1216,6 +1224,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 287279076, guid: c1c5c054088e3da49b016811b679143b, type: 3}
+    - target: {fileID: 7172321573512614649, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 2083422223}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
 --- !u!4 &1916018149 stripped
