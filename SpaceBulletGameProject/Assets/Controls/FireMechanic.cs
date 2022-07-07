@@ -47,7 +47,7 @@ public class FireMechanic : MonoBehaviour
         if (isMagazineEmpty)
             return;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
         {
             FireBullet();
         }
