@@ -256,7 +256,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
 --- !u!95 &78318907 stripped
 Animator:
-  m_CorrespondingSourceObject: {fileID: 4522236425263678121, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
   m_PrefabInstance: {fileID: 78318906}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &126582637 stripped
@@ -1141,26 +1141,50 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 78318907}
+    - target: {fileID: 55867187, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 813572037, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 78318907}
+    - target: {fileID: 813572037, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 843974452, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 78318907}
+    - target: {fileID: 843974452, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 1612855310, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 78318907}
+    - target: {fileID: 1612855310, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 1914497998, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 78318907}
+    - target: {fileID: 1914497998, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 2042859521, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 78318907}
+    - target: {fileID: 2042859521, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 5992241566309093695, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_Name
       value: BattleCanvas
