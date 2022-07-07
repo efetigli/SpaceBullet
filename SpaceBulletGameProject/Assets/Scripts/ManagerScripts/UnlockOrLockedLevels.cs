@@ -24,6 +24,8 @@ public class UnlockOrLockedLevels : MonoBehaviour
 
     int ContinueLevel;
 
+    [SerializeField] private float delayTime;
+
     private void Awake()
     {
         CompleteLevel(1);
@@ -37,12 +39,18 @@ public class UnlockOrLockedLevels : MonoBehaviour
 
     public void ClickContinueLevelButton()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("ContinueLevel"));
+        StartCoroutine(DelayChangeScene());
     }
 
     public void DeleteLevelsData()
     {
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("MainMenu");
+    }
+
+    private IEnumerator DelayChangeScene()
+    {
+        yield return new WaitForSeconds(delayTime);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("ContinueLevel"));
     }
 }
