@@ -8,11 +8,14 @@ public class EnemyBulletPhysics : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [HideInInspector] public bool isHit;
     [HideInInspector] public bool isHitPlayer;
+    private Vector3 target;
 
     private void Start()
     {
         isHit = false;
         isHitPlayer = false;
+
+        target = playerShip.position * 2;
     }
 
     void Update()
@@ -22,7 +25,7 @@ public class EnemyBulletPhysics : MonoBehaviour
 
     private void BulletMove()
     {
-        transform.position = Vector3.MoveTowards(transform.position, playerShip.position, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
