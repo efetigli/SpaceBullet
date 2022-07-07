@@ -64,8 +64,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerShip: {fileID: 3102230470791230090, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
-  moveSpeed: 5
+  moveSpeed: 7
   isHit: 0
+  isHitPlayer: 0
 --- !u!50 &3324509707546092255
 Rigidbody2D:
   serializedVersion: 4
