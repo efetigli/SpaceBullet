@@ -122,6 +122,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 338257576}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ClickSomethingChangesSceneButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 55867186}
         m_TargetAssemblyTypeName: RetryLevel, Assembly-CSharp
         m_MethodName: ClickRetryLevelButton
@@ -134,16 +146,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 338257576}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: ClickContinueButton
-        m_Mode: 1
+      - m_Target: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ChangeScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &55867186
@@ -158,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4317b9cef8d3214dbfd5fdbb99a569f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 1
 --- !u!1 &176014207
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +721,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChangeScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &813572040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: MainMenu
+  delayTime: 1
 --- !u!1 &843974449
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +869,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 338257576}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ClickSomethingChangesSceneButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 843974451}
         m_TargetAssemblyTypeName: ChangeGameScene, Assembly-CSharp
         m_MethodName: ClickChangeGameScene
@@ -855,16 +893,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 338257576}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: ClickContinueButton
-        m_Mode: 1
+      - m_Target: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ChangeScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &843974451
@@ -880,6 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: MainMenu
+  delayTime: 1
 --- !u!1 &893838874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1671,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChangeScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &757970372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,6 +1695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249167f3bcb373e40b91441cb4c2c8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 1
 --- !u!1 &1710930615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1868,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChangeScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652367672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1828,6 +1892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4317b9cef8d3214dbfd5fdbb99a569f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 1
 --- !u!1 &2042859518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,6 +2027,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4522236425134497598, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChangeScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2042859520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1975,6 +2052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: MainMenu
+  delayTime: 1
 --- !u!1 &5322152960598756187
 GameObject:
   m_ObjectHideFlags: 0
