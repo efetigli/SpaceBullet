@@ -83,6 +83,7 @@ MonoBehaviour:
   playerShip: {fileID: 0}
   isFireBullet: 0
   enemyBullet: {fileID: 3324509707546092249, guid: 3103249290d77494c877632af70f7316, type: 3}
+  gameOver: {fileID: 0}
 --- !u!114 &1195686603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftLimit: {fileID: 0}
   rightLimit: {fileID: 0}
-  speed: 3
+  speed: 1.5
 --- !u!114 &5625520979839255278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,3 +248,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5fb1136cd452d4fa6899a8fb8ecf46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOver: {fileID: 0}
