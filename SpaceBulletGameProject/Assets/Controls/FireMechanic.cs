@@ -21,11 +21,14 @@ public class FireMechanic : MonoBehaviour
     private int bulletNumber;
     [HideInInspector] public bool isMagazineEmpty;
 
+    [HideInInspector] public static bool isPlayerDead;
+
 
     private void Start()
     {
         bulletNumber = 0;
         bulletClone = null;
+        isPlayerDead = false;
     }
 
     private void Update()
