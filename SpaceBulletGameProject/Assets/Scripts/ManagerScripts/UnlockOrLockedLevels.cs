@@ -26,10 +26,10 @@ public class UnlockOrLockedLevels : MonoBehaviour
 
     [SerializeField] private float delayTime;
 
-    private void Awake()
-    {
-        CompleteLevel(1);
-    }
+    //private void Awake()
+    //{
+    //    CompleteLevel(1);
+    //}
 
     public void CompleteLevel(int levelIndex)
     {
@@ -45,7 +45,6 @@ public class UnlockOrLockedLevels : MonoBehaviour
     public void DeleteLevelsData()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("MainMenu");
     }
 
     private IEnumerator DelayChangeScene()
