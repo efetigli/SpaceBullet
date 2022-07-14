@@ -39,7 +39,12 @@ public class UnlockOrLockedLevels : MonoBehaviour
 
     public void ClickContinueLevelButton()
     {
-        StartCoroutine(DelayChangeScene());
+        StartCoroutine(DelayChangeSceneContinue());
+    }
+    private IEnumerator DelayChangeSceneContinue()
+    {
+        yield return new WaitForSeconds(delayTime);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("ContinueLevel"));
     }
 
     public void DeleteLevelsData()
@@ -47,9 +52,10 @@ public class UnlockOrLockedLevels : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
-    private IEnumerator DelayChangeScene()
+    public void AdminDeleteLevelsData()
     {
-        yield return new WaitForSeconds(delayTime);
-        SceneManager.LoadScene(PlayerPrefs.GetInt("ContinueLevel"));
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("MainMenu");
     }
+
 }
