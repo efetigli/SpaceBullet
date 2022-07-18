@@ -15,7 +15,12 @@ public class EnemyBulletPhysics : MonoBehaviour
         isHit = false;
         isHitPlayer = false;
 
-        target = playerShip.position * 2;
+        float x_difference = playerShip.position.x - this.transform.position.x;
+        float y_difference = playerShip.position.y - this.transform.position.y;
+
+        target = new Vector3(playerShip.position.x + x_difference,
+            playerShip.position.y + y_difference,
+            playerShip.position.z);
     }
 
     void Update()
