@@ -56,3 +56,6 @@ TagManager:
   - name: PlayerShip
     uniqueID: 4074355947
     locked: 0
+  - name: Explosion
+    uniqueID: 2914165783
+    locked: 0
