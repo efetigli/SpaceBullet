@@ -17,6 +17,9 @@ public class EnemyFire : MonoBehaviour
 
     [SerializeField] private GameObject gameOver;
 
+    [Header("Needed Managers")]
+    [SerializeField] private GameObject levelManager;
+
     private void Start()
     {
         flag = true;
@@ -38,7 +41,8 @@ public class EnemyFire : MonoBehaviour
     {
         if (!flag)
             return;
-        if (playerShip.GetComponent<FireMechanic>().isMagazineEmpty)
+        if (playerShip.GetComponent<FireMechanic>().isMagazineEmpty 
+            && levelManager.GetComponent<LevelManager>().GetEnemyShipCount() != 0)
         {
             StartCoroutine(Fire());
             flag = false;
