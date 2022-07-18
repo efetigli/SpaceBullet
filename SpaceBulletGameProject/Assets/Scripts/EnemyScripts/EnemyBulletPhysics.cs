@@ -10,6 +10,8 @@ public class EnemyBulletPhysics : MonoBehaviour
     [HideInInspector] public bool isHitPlayer;
     private Vector3 target;
 
+    [SerializeField] private GameObject bulletFire;
+
     private void Start()
     {
         isHit = false;
@@ -42,11 +44,18 @@ public class EnemyBulletPhysics : MonoBehaviour
             //Destroy(collision.gameObject.transform.parent.gameObject);
             GameObject playerShip = collision.gameObject.transform.parent.gameObject;
             playerShip.GetComponent<PlayerExplode>().ExplodePlayerShip();
+            DisableBulletFire();
         }
 
         if (collision.gameObject.tag == "Obstacle")
         {
             isHit = true;
+            DisableBulletFire();
         }
+    }
+
+    private void DisableBulletFire()
+    {
+        bulletFire.SetActive(false);
     }
 }
