@@ -1430,6 +1430,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 1222772788}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1809946083}
     - target: {fileID: 6811318215483898939, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_RootOrder
       value: 0

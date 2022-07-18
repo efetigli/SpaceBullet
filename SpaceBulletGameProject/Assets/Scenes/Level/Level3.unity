@@ -258,6 +258,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 1387323918}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 978971606}
     - target: {fileID: 6811318215483898939, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -590,6 +594,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 1387323918}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 978971606}
     - target: {fileID: 6811318215483898939, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1238,6 +1246,10 @@ PrefabInstance:
     - target: {fileID: 4522236426468573075, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
       propertyPath: m_Name
       value: TransitionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522236426468573075, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7de48b2220b7594bae3e623b9141e9d, type: 3}

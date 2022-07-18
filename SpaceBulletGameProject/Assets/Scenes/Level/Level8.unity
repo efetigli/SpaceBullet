@@ -758,6 +758,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 943397893}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 545806584}
     - target: {fileID: 6811318215483898939, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1150,6 +1154,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 943397893}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 545806584}
     - target: {fileID: 6811318215483898939, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1344,6 +1352,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 943397893}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 545806584}
     - target: {fileID: 6811318215483898939, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_RootOrder
       value: 0

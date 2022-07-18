@@ -563,6 +563,10 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 706453323}
+    - target: {fileID: 1616013148, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1309671357}
     - target: {fileID: 5625520979839255278, guid: 4fce9fa8ba96ea94a994f2a8e1283926, type: 3}
       propertyPath: m_Enabled
       value: 1
