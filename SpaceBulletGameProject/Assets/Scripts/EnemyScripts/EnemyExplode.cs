@@ -19,6 +19,10 @@ public class EnemyExplode : MonoBehaviour
         enemyExplosion.SetActive(true);
 
         enemySprite.SetActive(false);
+
+        this.GetComponent<EnemyLateralMovement>().enabled = false;
+        this.GetComponent<EnemyForwardMovement>().enabled = false;
+
         yield return new WaitForSeconds(explosionTime);
         Destroy(this.gameObject);
     }
