@@ -80,7 +80,7 @@ public class FireMechanic : MonoBehaviour
 
             BulletHitEnemy();
 
-            Destroy(bulletClone);
+            bulletClone.GetComponent<BulletPhysics>().ExplodePlayerBullet();
         }
     }
 
