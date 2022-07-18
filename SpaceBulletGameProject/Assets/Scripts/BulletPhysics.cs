@@ -8,6 +8,13 @@ public class BulletPhysics : MonoBehaviour
     [HideInInspector] public bool isHit;
     [HideInInspector] public bool isHitEnemyShip;
 
+
+    [Header("Explode")]
+    [SerializeField] private GameObject bulletExplosion;
+    [SerializeField] private float explosionTime;
+    [SerializeField] private GameObject bulletSprite;
+    private bool stopPlayerBullet;
+
     private void Start()
     {
         isHit = false;
@@ -21,6 +28,8 @@ public class BulletPhysics : MonoBehaviour
 
     private void BulletMove()
     {
+        if (stopPlayerBullet) { return; }
+
         this.transform.position += transform.up * moveSpeed * Time.deltaTime;
     }
 
@@ -30,7 +39,9 @@ public class BulletPhysics : MonoBehaviour
         {
             isHit = true;
             isHitEnemyShip = true;
-            Destroy(collision.gameObject.transform.parent.gameObject);
+            //Destroy(collision.gameObject.transform.parent.gameObject);
+            GameObject enemyShip = collision.gameObject.transform.parent.gameObject;
+            enemyShip.GetComponent<EnemyExplode>().ExplodeEnemyShip();
         }
 
         if (collision.gameObject.tag == "Obstacle")
@@ -38,4 +49,27 @@ public class BulletPhysics : MonoBehaviour
             isHit = true;
         }
     }
+
+    public void ExplodePlayerBullet()
+    {
+        if (isHitEnemyShip)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        StartCoroutine(PlayerBulletExplodeAnimation());
+    }
+
+    private IEnumerator PlayerBulletExplodeAnimation()
+    {
+        stopPlayerBullet = true;
+        bulletExplosion.SetActive(true);
+        bulletSprite.SetActive(false);
+
+        this.GetComponent<CapsuleCollider2D>().enabled = false;
+
+        yield return new WaitForSeconds(explosionTime);
+        Destroy(this.gameObject);
+    }
+
 }
