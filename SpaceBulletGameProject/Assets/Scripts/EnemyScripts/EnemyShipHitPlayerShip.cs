@@ -11,7 +11,9 @@ public class EnemyShipHitPlayerShip : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             gameOver.SetActive(true);
-            Destroy(collision.gameObject.transform.parent.gameObject);
+            //Destroy(collision.gameObject.transform.parent.gameObject);
+            GameObject playerShip = collision.gameObject.transform.parent.gameObject;
+            playerShip.GetComponent<PlayerExplode>().ExplodePlayerShip();
         }
     }
 }
