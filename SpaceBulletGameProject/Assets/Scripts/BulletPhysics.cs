@@ -42,6 +42,7 @@ public class BulletPhysics : MonoBehaviour
             //Destroy(collision.gameObject.transform.parent.gameObject);
             GameObject enemyShip = collision.gameObject.transform.parent.gameObject;
             enemyShip.GetComponent<EnemyExplode>().ExplodeEnemyShip();
+            enemyShip.GetComponent<EnemyFire>().enabled = false;
         }
 
         if (collision.gameObject.tag == "Obstacle")
