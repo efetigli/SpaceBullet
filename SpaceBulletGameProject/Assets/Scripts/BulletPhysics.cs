@@ -13,6 +13,7 @@ public class BulletPhysics : MonoBehaviour
     [SerializeField] private GameObject bulletExplosion;
     [SerializeField] private float explosionTime;
     [SerializeField] private GameObject bulletSprite;
+    [SerializeField] private GameObject bulletFire;
     private bool stopPlayerBullet;
 
     private void Start()
@@ -66,6 +67,7 @@ public class BulletPhysics : MonoBehaviour
         stopPlayerBullet = true;
         bulletExplosion.SetActive(true);
         bulletSprite.SetActive(false);
+        bulletFire.SetActive(false);
 
         this.GetComponent<CapsuleCollider2D>().enabled = false;
 
