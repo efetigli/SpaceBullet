@@ -61,4 +61,9 @@ public class LevelManager : MonoBehaviour
         enemyShipCount = enemyShipCount - 1;
         EnemyShipCountChecker();
     }
+
+    public int GetEnemyShipCount()
+    {
+        return enemyShipCount;
+    }
 }
