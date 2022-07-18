@@ -34,7 +34,9 @@ public class EnemyBulletPhysics : MonoBehaviour
         {
             isHit = true;
             isHitPlayer = true;
-            Destroy(collision.gameObject.transform.parent.gameObject);
+            //Destroy(collision.gameObject.transform.parent.gameObject);
+            GameObject playerShip = collision.gameObject.transform.parent.gameObject;
+            playerShip.GetComponent<PlayerExplode>().ExplodePlayerShip();
         }
 
         if (collision.gameObject.tag == "Obstacle")
