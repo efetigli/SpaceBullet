@@ -20,6 +20,9 @@ public class EnemyFire : MonoBehaviour
     [Header("Needed Managers")]
     [SerializeField] private GameObject levelManager;
 
+    [Header("Fire Sound")]
+    [SerializeField] private AudioSource enemyFireSfx;
+
     private void Start()
     {
         flag = true;
@@ -56,7 +59,9 @@ public class EnemyFire : MonoBehaviour
 
     private void FireBullet()
     {
+        enemyFireSfx.enabled = false;
         enemyBulletClone = Instantiate(enemyBullet, gun.transform.position, enemyBullet.transform.rotation);
+        enemyFireSfx.enabled = true;
         RotateTowardsTarget();
         isFireBullet = true;
     }
