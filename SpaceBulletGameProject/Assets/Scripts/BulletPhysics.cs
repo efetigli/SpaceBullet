@@ -16,6 +16,8 @@ public class BulletPhysics : MonoBehaviour
     [SerializeField] private GameObject bulletFire;
     private bool stopPlayerBullet;
 
+    [SerializeField] private AudioSource bulletExplodeSfx;
+
     private void Start()
     {
         isHit = false;
@@ -64,12 +66,15 @@ public class BulletPhysics : MonoBehaviour
 
     private IEnumerator PlayerBulletExplodeAnimation()
     {
+        bulletExplodeSfx.enabled = false;
         stopPlayerBullet = true;
         bulletExplosion.SetActive(true);
         bulletSprite.SetActive(false);
         bulletFire.SetActive(false);
 
         this.GetComponent<CapsuleCollider2D>().enabled = false;
+
+        bulletExplodeSfx.enabled = true;
 
         yield return new WaitForSeconds(explosionTime);
         Destroy(this.gameObject);
