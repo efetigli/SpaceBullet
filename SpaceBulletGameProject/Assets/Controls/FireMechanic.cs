@@ -23,6 +23,9 @@ public class FireMechanic : MonoBehaviour
 
     [HideInInspector] public static bool isPlayerDead;
 
+    [Header("Fire Sound")]
+    [SerializeField] private AudioSource playerFireSfx;
+
 
     private void Start()
     {
@@ -58,7 +61,9 @@ public class FireMechanic : MonoBehaviour
 
     private void FireBullet()
     {
+        playerFireSfx.enabled = false;
         bulletClone = Instantiate(bullet, gun.transform.position, sight.transform.rotation);
+        playerFireSfx.enabled = true;
 
         isFireBullet = true;
         sight.GetComponent<SightMoving>().stopRotation = true;
