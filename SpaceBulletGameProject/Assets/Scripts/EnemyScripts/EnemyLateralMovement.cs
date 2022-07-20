@@ -15,11 +15,15 @@ public class EnemyLateralMovement : MonoBehaviour
     [SerializeField] private float speed;
     private float distanceBetweenShipAndLimit;
 
+    private float waitTime = 2f;
+    private bool isAbleToMoveLateral = false;
+
     private void Start()
     {
         isMovingRight = true;
         isMovingLeft = false;
         distanceBetweenLimits = Mathf.Abs(leftLimit.position.x - rightLimit.position.x);
+        StartCoroutine(AbleToMoveLateral());
     }
 
     private void Update()
@@ -29,6 +33,9 @@ public class EnemyLateralMovement : MonoBehaviour
 
     private void Lateral()
     {
+        if (!isAbleToMoveLateral)
+            return;
+
         if (isMovingLeft)
         {
             distanceBetweenShipAndLimit = Mathf.Abs(this.transform.position.x - rightLimit.transform.position.x);
@@ -53,6 +60,12 @@ public class EnemyLateralMovement : MonoBehaviour
 
             transform.position = transform.position + new Vector3(speed * Time.deltaTime, 0, 0);
         }
+    }
+
+    private IEnumerator AbleToMoveLateral()
+    {
+        yield return new WaitForSecondsRealtime(waitTime);
+        isAbleToMoveLateral = true;
     }
 
 }
