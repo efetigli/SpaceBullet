@@ -1131,6 +1131,7 @@ GameObject:
   - component: {fileID: 1107881196}
   - component: {fileID: 1107881195}
   - component: {fileID: 1107881194}
+  - component: {fileID: 3164712652976296758}
   m_Layer: 5
   m_Name: SoundButton
   m_TagString: Untagged
@@ -1239,7 +1240,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1107881195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3164712652976296758}
+        m_TargetAssemblyTypeName: MuteGame, Assembly-CSharp
+        m_MethodName: MuteOrUnmuteGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3164712652976296758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107881192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1dfe9f661cb5e0459840b2802aac6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1263161754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,7 +2215,7 @@ AudioSource:
   m_GameObject: {fileID: 289267248863137629}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3057799096578882551, guid: e47586d1dc32c384aa3948107a9a8bb4, type: 2}
   m_audioClip: {fileID: 8300000, guid: d4a3833239257324ab63a7a437c10078, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3566,7 +3591,7 @@ AudioSource:
   m_GameObject: {fileID: 7561180673280420249}
   m_Enabled: 0
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -311494854874744848, guid: e47586d1dc32c384aa3948107a9a8bb4, type: 2}
   m_audioClip: {fileID: 8300000, guid: 7f654842aaf974ca39064687927e7574, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
