@@ -14,7 +14,8 @@ public class RetryLevel : MonoBehaviour
 
     private IEnumerator DelayChangeScene()
     {
-        yield return new WaitForSeconds(delayTime);
+        yield return new WaitForSecondsRealtime(delayTime);
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
