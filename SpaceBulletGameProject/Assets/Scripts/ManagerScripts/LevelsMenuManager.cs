@@ -16,7 +16,8 @@ public class LevelsMenuManager : MonoBehaviour
             string levelName = "Level" + index.ToString();
             if(PlayerPrefs.GetInt(levelName) >= 1)
             {
-                LevelButtons[i].SetActive(true);
+                LevelButtons[i].GetComponent<Button>().enabled = true;
+                LevelButtons[i].GetComponent<Image>().color = Color.white;
             }
             
         }
@@ -30,5 +31,15 @@ public class LevelsMenuManager : MonoBehaviour
         }
     }
 
-    
+    public void AdminUnlockAllLevels()
+    {
+        for (int i = 0; i < LevelButtons.Length; i++)
+        {
+            int index = i + 1;
+            string levelName = "Level" + index.ToString();
+            LevelButtons[i].GetComponent<Button>().enabled = true;
+            LevelButtons[i].GetComponent<Image>().color = Color.white;
+        }
+    }
+
 }
