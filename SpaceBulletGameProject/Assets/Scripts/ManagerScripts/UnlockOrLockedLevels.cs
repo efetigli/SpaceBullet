@@ -49,7 +49,15 @@ public class UnlockOrLockedLevels : MonoBehaviour
 
     public void DeleteLevelsData()
     {
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        float musicVolume = PlayerPrefs.GetFloat("MusicVolume");
+        float sfxVolume = PlayerPrefs.GetFloat("SFXVolume");
+        int mute = PlayerPrefs.GetInt("Mute");
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetFloat("MasterVolume", masterVolume);
+        PlayerPrefs.SetFloat("MusicVolume", musicVolume);
+        PlayerPrefs.SetFloat("SFXVolume", sfxVolume);
+        PlayerPrefs.SetInt("Mute", mute);
     }
 
     public void AdminDeleteLevelsData()
@@ -57,5 +65,4 @@ public class UnlockOrLockedLevels : MonoBehaviour
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("MainMenu");
     }
-
 }
