@@ -19,8 +19,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
-    public void ClickSomethingChangesSceneButton()
-    {
-        Time.timeScale = 1;
-    }
+    //public void ClickSomethingChangesSceneButton()
+    //{
+    //    Time.timeScale = 1;
+    //}
 }
