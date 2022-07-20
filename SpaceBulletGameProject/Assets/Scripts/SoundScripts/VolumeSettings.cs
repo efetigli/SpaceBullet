@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class VolumeSettings : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private string exposedParamaterName;
+
+    [SerializeField] private Slider mySlider;
+
+    private bool isMute;
+
+    public void SetVolume(float volume)
     {
-        
+        audioMixer.SetFloat(exposedParamaterName, volume);
+        PlayerPrefs.SetFloat(exposedParamaterName, volume);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
