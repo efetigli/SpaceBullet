@@ -18,13 +18,13 @@ public class MuteGame : MonoBehaviour
         if (m == 1)
         {
             isMute = true;
-            AudioListener.pause = isMute;
+            AudioListener.volume = 0;
             this.GetComponent<Image>().color = Color.red;
         }
         else if (m == 0)
         {
             isMute = false;
-            AudioListener.pause = isMute;
+            AudioListener.volume = 1;
             this.GetComponent<Image>().color = Color.white;
         }
     }
