@@ -1116,10 +1116,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 576206799}
     m_Modifications:
-    - target: {fileID: 3470404933316292125, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5992241566309093695, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_Name
       value: BattleCanvas
