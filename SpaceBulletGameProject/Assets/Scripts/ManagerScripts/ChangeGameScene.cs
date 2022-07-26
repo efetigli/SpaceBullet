@@ -17,6 +17,16 @@ public class ChangeGameScene : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(delayTime);
         Time.timeScale = 1;
-        SceneManager.LoadScene(sceneName);
+        //SceneManager.LoadScene(sceneName);
+        StartCoroutine(NewGameAsyncScene());
+    }
+
+    IEnumerator NewGameAsyncScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
