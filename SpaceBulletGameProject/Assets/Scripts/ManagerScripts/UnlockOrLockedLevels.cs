@@ -44,7 +44,8 @@ public class UnlockOrLockedLevels : MonoBehaviour
     private IEnumerator DelayChangeSceneContinue()
     {
         yield return new WaitForSeconds(delayTime);
-        SceneManager.LoadScene(PlayerPrefs.GetInt("ContinueLevel"));
+        //SceneManager.LoadScene(PlayerPrefs.GetInt("ContinueLevel"));
+        StartCoroutine(ContinueAsyncScene());
     }
 
     public void DeleteLevelsData()
@@ -64,5 +65,14 @@ public class UnlockOrLockedLevels : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("MainMenu");
+    }
+
+    IEnumerator ContinueAsyncScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("ContinueLevel"));
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
