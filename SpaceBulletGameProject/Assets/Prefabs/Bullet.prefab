@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14699ca28e83ec458622e76d1481eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 5.5
   isHit: 0
   isHitEnemyShip: 0
   bulletExplosion: {fileID: 4658027869984734502}
