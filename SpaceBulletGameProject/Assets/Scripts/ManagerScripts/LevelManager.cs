@@ -40,7 +40,10 @@ public class LevelManager : MonoBehaviour
     private IEnumerator ActivateComplete()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        PlayerPrefs.SetInt("ContinueLevel", sceneIndex + 1);
+        if (sceneIndex == 16)
+            PlayerPrefs.SetInt("ContinueLevel", 16);
+        else
+            PlayerPrefs.SetInt("ContinueLevel", sceneIndex + 1);
         unlockOrLockedLevels.GetComponent<UnlockOrLockedLevels>().CompleteLevel(sceneIndex);
 
         yield return new WaitForSeconds(completePanelTime);
