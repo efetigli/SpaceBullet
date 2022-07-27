@@ -855,6 +855,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1237700318}
     m_Modifications:
+    - target: {fileID: 1710930616, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -103.8999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710930616, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470404933316292125, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5992241566309093695, guid: 2d9e303867429b04caa61a5d3eb1fe4d, type: 3}
       propertyPath: m_Name
       value: BattleCanvas
@@ -1009,6 +1021,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3102230470310072124, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102230470310072124, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102230470310072124, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102230470310072124, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102230470310072124, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3102230470791230085, guid: 09d974176acae304cbd3dccaadc1554a, type: 3}
       propertyPath: m_Name
       value: PlayerShip
